@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .contenedor {
+        @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+    }
+
+    .btn {
+        @apply bg-bright-red text-very-light-gray font-semibold px-12 py-4 shadow-sm rounded-full;
+    }
+
+    .footer-area {
+        grid-template-areas: 
+        "form"
+        "navigation"
+        "social-media"
+        "logo"
+        "copy";
+    }
+
+    .footer-area-md {
+        grid-template-areas: 
+        "logo navigation form"
+        "social-media navigation copy";
+    }
+}
